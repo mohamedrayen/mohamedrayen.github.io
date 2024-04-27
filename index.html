@@ -12,8 +12,8 @@
     }
     .carousel-image {
       border-radius: 25px;
-      max-height: 100vh;
-      max-width: 100vw;
+      max-height: 90vh;
+      max-width: 90vw;
       height: auto;
       width: auto;
       display: block;
@@ -47,9 +47,10 @@
         </div>
       </div>
       </div>
-    <div style="position:absolute;display:flex;flex-direction:raw;">
-    <div class="carousel-nav left" onclick="document.getElementById('myCarousel').carousel('prev')"></div>
-    <div class= "carousel-nav right" onclick="document.getElementById('myCarousel').carousel('next')"></div>
+    <div style="position:absolute;display:flex;flex-direction:raw;height:100%;width:100%;top:0;lef:0;right:0;">
+    <div class="carousel-nav left carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev"></div>
+    <div class="carousel-nav right carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next"></div>
+      
       </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
